@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family:  'Arial Narrow', Arial, sans-serif;
+}
+.top-pannel {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    width: 100vw;
+    /* background: linear-gradient(90deg, #0f0c29, #302b63, #24243e); */
+    background: linear-gradient(90deg , #11113e , #1c1c79 , #0d0d47);
+}
+.name {
+    font-size: 2rem;
+    margin-right: 50vw;
+    margin-left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.top-pannel .search-field a {
+    text-decoration: none;
+    margin-left: 3vw;
+}
+.search-field {
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 100;
+    color: rgb(200, 200, 200);
+}
+.btn {
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgb(2, 2, 77);
+    transition: 1s;
+}
+.btn:hover {
+    box-shadow: 0 0 20px rgb(156, 171, 235);
+    background-color: rgb(10, 10, 46);
+    scale: 2;
+}
+.disable {
+    background-color: transparent;
+}
+/* header end */
+/* hero section start */
+.hero-section {
+    width: 100vw;
+    height: 90vh;
+    background: linear-gradient(90deg, #392e9a, #271ca2, #16165d);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.hero-section .box1 {
+    width: 30%;
+    height: 80vh;
+    border-radius: 30px;
+    background-image: url("Pictures/My_pic.png");
+    background-size: cover;
+}
+.hero-section .box2 {
+    width: 50%;
+    height: 45vh;
+    /* background: linear-gradient(180deg , rgb(8, 8, 72) , rgb(16, 16, 125) , rgb(2, 2, 133)); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box2 .title {
+    position: relative;
+    left: 5%;
+    width: 50%;
+    height: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    scale: 1.2;
+    /* background: linear-gradient(90deg, #392e9a, #271ca2, #16165d); */
+}
+.title p {
+    font-size: 0.9rem;
+}
+.hero-section .box2 button {
+    position: relative;
+    border: 0;
+    border-radius: 20px;
+    left: 5%;
+    top: 10%;
+    height: 12%;
+    width: 20%;
+    scale: 1.5;
+    background: linear-gradient(30deg , rgb(235, 31, 65) , rgb(218, 111, 129) , rgb(82, 25, 35));
+    transition: 1s;
+}
+
+.glow:hover {
+    background: linear-gradient(30deg , rgb(116, 14, 31) , rgb(218, 80, 103) , rgb(85, 11, 24));
+    box-shadow: 0 0 10px rgb(245, 153, 153);
+    color: gray;
+    transform: scale(1.1);
+}
+.presentation-effect {
+    opacity: 0;
+    animation: slide-animation 2s ease 2s ;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes slide-animation {
+    from {
+        opacity: 0;
+        transform: translate(80px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+    
+}
+.button-effect {
+    opacity: 0;
+    animation: popup 1s ease 3s forwards;
+}
+@keyframes popup {
+    from {
+        opacity: 0;
+        transform: scale(0.2);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.fade {
+    opacity: 0;
+    animation: presentation 3s ease 2s 1 forwards;
+}
+@keyframes presentation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Personal detail section */
+.personal-detail {
+    width: 100%vw;
+    height: 500px;
+    background: linear-gradient(90deg, #403792, #33299d, #202064);
+}
+.personal-detail .description {
+    width: 100%;
+    height: 20%;
+    background-color: #16165d;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.personal-detail .links {
+    width: 100%;
+    height: 80%;
+    background-color: #11113e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.link-btn {
+    height: 250px;
+    width: 250px;
+    border: 0;
+
+    background: linear-gradient(135deg, #7FA6FF, #9C8CFF);
+    /* background: linear-gradient(45deg , #91c5e3 , #a2a2ef , #097ce1); */
+    border-radius: 10px;
+}
+#Instagram {
+    display: inline-block;
+    height: 30%;
+    width: 30%;
+    background-image: url("Pictures/instagram-logo.png");
+    background-size: cover;
+}
+#LinkedIn {
+    display: inline-block;
+    height: 48%;
+    width: 48%;
+    background-image: url("Pictures/linkedin-logo.png");
+    background-size: cover;
+}
+#GitHub {
+    display: inline-block;
+    height: 35%;
+    width: 35%;
+    background-image: url("Pictures/gitHub-logo.png");
+    background-size: cover;
+}
+
