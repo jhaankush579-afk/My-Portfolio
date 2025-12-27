@@ -3,7 +3,7 @@
 This is a responsive website built using HTML and CSS.
 
 ## 🚀 Live Demo
-https://username.github.io/repo-name/
+https://username.github.io/My-Portfolio/
 
 ## 🛠 Technologies
 - HTML
